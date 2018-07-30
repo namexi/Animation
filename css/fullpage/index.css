@@ -1,0 +1,39 @@
+/*公共部分*/
+.go img{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 999;
+}
+
+.more img{
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    z-index: 999;
+    animation: more .3s  linear alternate infinite;
+}
+
+
+
+.content{
+    width:900px;
+    height:600px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -450px;
+}
+
+@keyframes more {
+    from{
+        transform:translateY(-5px);
+    }
+    to{
+        transform:translateY(8px);
+    }
+}
+
+
+

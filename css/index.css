@@ -36,4 +36,47 @@
 }
 
 
+/*第一屏*/
+
+.section01{
+    background: url(../images/01-bg.png) no-repeat bottom center;
+}
+
+.goods{
+  margin: 220px 0 0 30px ;
+}
+
+.fly{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    animation: fly 1s linear alternate infinite;
+}
+
+.sofa{
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    animation: sofa01 .6s linear alternate infinite;
+}
+
+
+
+@keyframes fly {
+    from{
+        transform:translateY(-30px);
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+
+@keyframes sofa01 {
+    from{
+        transform:translateY(-8px);
+    }
+    to{
+        transform:translateY(8px);
+    }
+}
 

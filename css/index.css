@@ -1,0 +1,82 @@
+/*公共部分*/
+.go img{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 999;
+}
+
+.more img{
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    z-index: 999;
+    animation: more .3s  linear alternate infinite;
+}
+
+
+
+.content{
+    width:900px;
+    height:600px;
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    margin-left: -450px;
+}
+
+@keyframes more {
+    from{
+        transform:translateY(-5px);
+    }
+    to{
+        transform:translateY(8px);
+    }
+}
+
+
+/*第一屏*/
+
+.section01{
+    background: url(../images/01-bg.png) no-repeat bottom center;
+}
+
+.goods{
+  margin: 220px 0 0 30px ;
+}
+
+.fly{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    animation: fly 1s linear alternate infinite;
+}
+
+.sofa{
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    animation: sofa01 .6s linear alternate infinite;
+}
+
+
+
+@keyframes fly {
+    from{
+        transform:translateY(-30px);
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+
+@keyframes sofa01 {
+    from{
+        transform:translateY(-8px);
+    }
+    to{
+        transform:translateY(8px);
+    }
+}
+

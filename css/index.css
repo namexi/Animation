@@ -42,18 +42,18 @@
     background: url(../images/01-bg.png) no-repeat bottom center;
 }
 
-.goods{
+.section01 .content .goods{
   margin: 220px 0 0 30px ;
 }
 
-.fly{
+.section01 .content .fly{
     position: absolute;
     top: -20px;
     right: -20px;
     animation: fly 1s linear alternate infinite;
 }
 
-.sofa{
+.section01 .content .sofa{
     position: absolute;
     top: 120px;
     left: 220px;
@@ -80,3 +80,45 @@
     }
 }
 
+
+/*第二屏*/
+
+.section02{
+    background: url(../images/02-bg.png) no-repeat center bottom;
+}
+
+.section02 .content .text{
+    text-align: center;
+}
+
+.section02 .content .text img:last-child{
+    position: absolute;
+    opacity:0;
+}
+
+.section02 .content .search{
+    position: absolute;
+    top:115px;
+    right: 170px;
+}
+
+.search img:last-child{
+    position: absolute;
+    top:4px;
+    right: 58px;
+}
+
+.section02 .content .goods{
+    position: absolute;
+    left: 222px;
+    bottom: 209px;
+}
+
+@keyframes text {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

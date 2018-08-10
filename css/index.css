@@ -98,27 +98,104 @@
 
 .section02 .content .search{
     position: absolute;
-    top:115px;
-    right: 170px;
+    top:112px;
+    right: 169px;
+    opacity: 0;
+    /*transform: translate(340px,208px);*/
+    /*animation: search 1s linear forwards;*/
+    /*animation: search-box 1s linear forwards;*/
+
 }
 
-.search img:last-child{
+.section02 .search img:last-child{
     position: absolute;
-    top:4px;
-    right: 58px;
+    /*top:4px;*/
+    /*right: 58px;*/
+    top:175px;
+    right: 403px;
+    transform: scale(0);
+
+
+
+
 }
 
 .section02 .content .goods{
     position: absolute;
     left: 222px;
     bottom: 209px;
+    transform-origin: bottom right;
+    transform: scale(0);
 }
 
-@keyframes text {
+@keyframes search {
+       0%{
+           opacity: 1;
+           transform: translate(2000px,122px);
+       }
+
+       100%{
+           opacity: 1;
+           transform: translate(-150px,120px);
+
+       }
+    /*100%{*/
+
+        /*opacity: 1;*/
+        /*top:113px;*/
+        /*right: 170px;*/
+        /*transform:  scale(0.7);*/
+        /*transform-origin: right;*/
+    /*}*/
+
+   }
+
+@keyframes key {
+ 0%{
+     top:6px;
+     right: 63px;
+     transform: scale(0);
+ }
+
+
+   /*25%{*/
+        /*top:6px;*/
+        /*right: 63px;*/
+        /*transform: scale(0);*/
+    /*}*/
+    50%{
+        top:6px;
+        right: 63px;
+        transform: scale(0);
+    }
+    100%{
+        top:4px;
+        right: 58px;
+        transform: scale(1);
+    }
+}
+
+@keyframes goods{
     from{
-        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+
+        transform: scale(1);
+    }
+}
+@keyframes search01{
+    from{
+        opacity: 1;
+        transform: translate(-150px,120px);
     }
     to{
         opacity: 1;
+        top:113px;
+        right: 170px;
+        transform:  scale(0.7);
+        transform-origin: right;
     }
 }
+
+

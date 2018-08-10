@@ -127,6 +127,16 @@
     transform-origin: bottom right;
     transform: scale(0);
 }
+.section02 .content .sofa{
+    position: absolute;
+    top: 88px;
+    left: 230px;
+    transform: scale(0.5);
+    transform-origin: bottom right;
+    opacity: 0;
+    z-index: 999;
+
+}
 
 @keyframes search {
        0%{
@@ -198,4 +208,49 @@
     }
 }
 
+@keyframes sofa02 {
+    from{
+        opacity: 1;
+        transform: scale(0.5);
+
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) translate(-20px,1052px);
+    }
+}
+
+/*第三屏*/
+.section03{
+    background: url(../images/03-bg.png) no-repeat bottom center;
+
+}
+.section03 .content .sofa{
+    position: absolute;
+    top: 180px;
+    left: 214px;
+    opacity: 0;
+
+
+}
+.section03 .content .gods{
+    position: absolute;
+    bottom: 180px;
+    right: 115px;
+}
+
+.section03 .content .gods img:last-child{
+    position: absolute;
+    opacity: 0;
+}
+
+.section03 .content .cart{
+    position: absolute;
+    bottom: 100px;
+    right: 155px;
+}
+.section03 .content .cart img:last-child{
+    position: absolute;
+    opacity: 0;
+}
 
